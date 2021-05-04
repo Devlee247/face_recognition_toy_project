@@ -25,6 +25,7 @@ if not face_cascade.load(cv2.samples.findFile(face_cascade_name)):
 while True:
     ret, frame = capture.read()
     # error handling
+    
     if not ret:
         print("Can't receive frame. Exiting ...")
         break
